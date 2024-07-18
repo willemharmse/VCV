@@ -6,5 +6,4 @@ This will be the layout of my virtual CV on the webpage hosted by GitHub
 - experience.html (Experience)
 - education.html (Education)
 - achievements.html (Achievements and Awards)
-- blog.html (Blog)
 - contact.html (Contact)
