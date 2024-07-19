@@ -76,8 +76,6 @@ function initPlasmaBackground() {
             }
         }
     
-
-    
         ctx.putImageData(imgData, 0, 0);
         time += 0.01;
         
