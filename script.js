@@ -4,15 +4,21 @@ document.addEventListener('DOMContentLoaded', function() {
     const menuLength = menuItem.length;
     for (let i = 0; i < menuLength; i++) {
         if (menuItem[i].href === currentLocation) {
-            menuItem[i].className = 'active';
+            menuItem[i].classList.add('active');
+        } else {
+            menuItem[i].classList.remove('active');
         }
     }
-});
 
-window.onscroll = () => {
-    if((window.innerHeight + window.pageYOffset) >= document.body.offsetHeight){
-        console.log("Hi");
-    }
-}
+    // Add hover effect for nav items
+    menuItem.forEach(item => {
+        item.addEventListener('mouseover', () => {
+            item.classList.add('hovered');
+        });
+        item.addEventListener('mouseout', () => {
+            item.classList.remove('hovered');
+        });
+    });
+});
 
 const toTop = () => window.scrollTo({top: 0, behavior: 'smooth'})

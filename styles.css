@@ -1,3 +1,4 @@
+/* Basic reset to remove default browser styles */
 * {
     margin: 0;
     padding: 0;
@@ -8,11 +9,35 @@ body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f9;
     color: #333;
+    overflow: hidden; /* Prevent scrollbars */
+}
+
+.plasma-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Ensure it stays behind other content */
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    background-size: 400% 400%;
+    animation: plasma-animation 15s ease infinite;
+}
+
+@keyframes plasma-animation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
 }
 
 nav {
-    background-color: #333;
+    background: rgba(51, 51, 51, 0.8);
     padding: 10px 0;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 nav ul {
@@ -23,6 +48,7 @@ nav ul {
 
 nav ul li {
     margin: 0 15px;
+    transition: transform 0.3s ease;
 }
 
 nav ul li a {
@@ -31,12 +57,15 @@ nav ul li a {
     padding: 15px 0;
     display: block;
     position: relative;
+    transition: transform 0.3s ease, text-shadow 0.3s ease;
 }
 
 nav ul li a:hover,
 nav ul li a.active {
-    text-decoration: underline;
+    text-decoration: none;
     font-weight: bold;
+    transform: scale(1.1);
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
 }
 
 header {
@@ -80,4 +109,5 @@ header {
     font-size: 1rem;
     max-width: 600px;
     line-height: 1.5;
+    margin-bottom: 20px;
 }
