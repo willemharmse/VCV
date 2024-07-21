@@ -60,8 +60,8 @@ function initPlasmaBackground() {
                 
                 // Base color: dark blue
                 let r = 20;
-                let g = 40;
-                let b = 80;
+                let g = 100;
+                let b = 150;
                 
                 // Add some variation
                 r += Math.sin(x * 0.01 + time) * 20;
@@ -77,7 +77,7 @@ function initPlasmaBackground() {
         }
     
         ctx.putImageData(imgData, 0, 0);
-        time += 0.01;
+        time += 0.1;
         
         requestAnimationFrame(drawPlasma);
     }
