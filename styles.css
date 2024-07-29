@@ -1,116 +1,244 @@
-/* Basic reset to remove default browser styles */
-* {
-    margin: 0;
-    padding: 0;
+*{
     box-sizing: border-box;
-}
-
-body {
-    font-family: Arial, sans-serif;
-    color: #333;
-    margin: 0;
     padding: 0;
-    overflow-x: hidden; /* Prevent horizontal scrollbars */
-    background: transparent;
-}
-
-#plasma-bg {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    z-index: -1; /* Ensure it stays behind other content */
-    opacity: 0.6;
-}
-
-nav {
-    background: rgba(51, 51, 51, 0.8);
-    padding: 10px 0;
-    position: sticky;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-}
-
-nav ul li {
-    margin: 0 15px;
-    transition: transform 0.3s ease;
-}
-
-nav ul li a {
-    color: white;
+    margin: 0;
+    font-family: poppins,sans-serif;
     text-decoration: none;
-    padding: 15px 0;
-    display: block;
-    position: relative;
-    transition: transform 0.3s ease, text-shadow 0.3s ease;
 }
 
-nav ul li a:hover,
-nav ul li a.active {
-    text-decoration: none;
-    font-weight: bold;
-    transform: scale(1.1);
-    text-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+body{
+    overflow-x: hidden;
 }
 
-header {
+.header {
+    width:100%;
+    height: 100%;
+    min-height: 100vh;
+    background: #222;
+}
+
+.wrapper {
+    width:1280px;
+    max-width: 95%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header{
+    padding: 40px 0 30px;
     display: flex;
+    justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
+}
+
+.initials {
+    display: inline-flex;
     justify-content: center;
-    height: 100vh;
-    background: none; /* Remove background as plasma-bg is now the background */
-    color: white;
+    align-items: center;
+}
+
+.int-text {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.initials i{
+    height: 45px;
+    width:45px;
+    background-color: #007ced;
+    border-radius: 50%;
+    color:#fff;
+    font-weight: 700;
+    font-size: 1.5rem;
+    padding: 10px;
+    margin-right: 5px;
+    cursor: pointer;
     text-align: center;
+    
 }
 
-.container {
+.initials .int-text{
+    font-size: 24px;
+    font-weight: 500;
+    color:#fff;
+}
+
+nav .openNav {
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    top:45px;
+    right: 3%;
+    z-index: 5;
+    cursor: pointer;
+    display: none;
+}
+
+nav .openNav span{
+    display: block;
+    background-color: #007ced;
+    margin: 5px 0px;
+    width:100%;
+    height:3px;
+    transition: 0.3s;
+    transition-property:  transform, opacity;
+
+}
+
+nav .navOptions{
+    list-style-type: none;
+}
+
+nav .navOptions li{
+    display: inline-block;
+}
+
+nav .navOptions li a{
+    color:#e5e5e5;
+    margin-right: 2.5rem;
+}
+
+.picContainer{
     display: flex;
+    justify-content: space-around;
     align-items: center;
+    padding-top: 4rem;
+}
+
+.picContainer .photo {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 15px solid #444;
+    box-shadow: 5px 7px 25px rgba(0,0,0,0.5);
+}
+
+.photo img {
+    height: 100%;
+    width:  100%;
+    transition: 0.5s;
+}
+
+.photo img:hover{
+    transform: scale(1.2);
+}
+
+.about-me{
+    max-width: 500px;
+    display: flex;
     flex-direction: column;
 }
 
-.profile-pic {
-    margin-bottom: 20px;
+.about-me h5{
+    color:#e5e5e5;
+    font-size: 14px;
 }
 
-.profile-pic img {
-    border-radius: 50%;
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
+.about-me h5 span{
+    color:#007ced;
+    font-size: 16px;
 }
 
-.intro h1 {
-    font-size: 2.5rem;
-    margin-bottom: 10px;
+.about-me h1{
+    color: #007ced;
+    font-size: 3rem;
 }
 
-.intro h2 {
-    font-size: 1.5rem;
-    margin-bottom: 20px;
+.about-me p{
+    color:#e5e5e5;
 }
 
-.intro p {
-    font-size: 1rem;
-    max-width: 600px;
-    line-height: 1.5;
-    margin-bottom: 20px;
+.interact{
+    margin:45px 0;
+}
+.interact .button{
+    border-color: #d5d5d5;
+    color:#fff;
+    background-color: #333;
+    padding: 12px 25px;
+    margin: 5px 0px;
+    margin-right:7px;
+    border-radius: 30px;
+    border:2px solid #e5e5e5;
+    box-shadow:  0 10px 10px -8px rgb(0 0 0 / 78%);
 }
 
-.intro h1, .intro h2, .intro p {
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+.button .on{
+    border-color: #007ced;
 }
 
-body, .intro h1, .intro h2, .intro p {
-    color: #333;
-    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.7);
+.about-me .contact-me i{
+    color: #e5e5e5;
+    font-size: 18px;
+    margin-right: 10px;
+    transition: 0.5s;
+}
+
+.about-me .contact-me i:hover{
+    color:#007ced;
+    transform: rotate(360deg);
+}
+
+@media(max-width:930px)
+{
+    nav .navOptions{
+        display: initial;
+    }
+    /* for toggle button**/
+    .push {
+        top:45px;
+    }
+    .push span{
+        position: absolute;
+        margin-top:12px
+    }
+    .push span:first-child{
+        transform: rotate(-40deg);
+    }
+    .push span:nth-child(2)
+    {
+        opacity: 0;
+        margin:0;
+    }
+    .push span:last-child{
+        transform: rotate(45deg);
+        top:0;
+    }
+    nav .navOptions{
+        position: absolute;
+        top:110px;
+        right:-100%;
+        bottom: 0;
+        width: 60%;
+        height: 100vh;
+        background-color: #222;
+        z-index: 3;
+        box-shadow: 5px 13px 30px rgba(0,0,0,0.1);
+        transition: 0.5s;
+        padding: 25px 0px;
+    }
+    nav .navOptions li{
+        display: block;
+    }
+    nav .navOptions li a{
+        display: block;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+    nav .navOptions .open{
+        right:0;
+    }
+}
+@media(max-width:768px)
+{
+    .picContainer{
+        flex-direction: column;
+        padding-top:2rem
+    }
+    .about-me{
+        padding:40px 0px;
+    }
 }
