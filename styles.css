@@ -58,6 +58,8 @@
     margin-left: 5px;
   }
 
+
+  /*Introduction Section*/
   .intro {
     display: flex;
     justify-content: space-between;
@@ -104,4 +106,50 @@
   .intro .image img {
     width: 350px;
     border-radius: 50%;
+  }
+
+  /*Skill Section*/
+  .sk-section {
+    padding: 0 50px;
+    margin-bottom: 100px;
+  }
+  
+  .sk-section h2 {
+    text-align: center;
+    font-size: 35px;
+  }
+  
+  .sk-section .skillsTxt {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .sk-section .mainCells {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .sk-section .mainCells .subCell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  
+    width: 200px;
+    padding: 10px 20px;
+    margin: 10px;
+    border: 1.5px solid #d3d3d3;
+    border-radius: 5px;
+  }
+  
+  .sk-section .mainCells .subCell img {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+    border-radius: 2px;
+  }
+  
+  .sk-section .mainCells .subCell span {
+    font-size: 18px;
   }
