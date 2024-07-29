@@ -166,7 +166,7 @@ nav .navOptions li a{
     box-shadow:  0 10px 10px -8px rgb(0 0 0 / 78%);
 }
 
-.button .on{
+.button.on{
     border-color: #007ced;
 }
 
@@ -228,7 +228,7 @@ nav .navOptions li a{
         margin-bottom: 15px;
         text-align: center;
     }
-    nav .navOptions .open{
+    nav .navOptions.open{
         right:0;
     }
 }
