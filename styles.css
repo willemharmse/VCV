@@ -153,3 +153,114 @@
   .sk-section .mainCells .subCell span {
     font-size: 18px;
   }
+
+  .ct-s {
+    padding: 0 50px;
+    margin-bottom: 100px;
+  }
+  
+  .ct-s h2 {
+    font-size: 35px;
+  }
+  
+  .ct-s .gp {
+    display: flex;
+    gap: 50px;
+  }
+  
+  .ct-s .gp .txtContact {
+    flex: 3;
+    margin-top: 20px;
+  }
+  
+  .ct-s .gp form {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .ct-s .gp form input,
+  .ct-s .gp form textarea {
+    font-family: 'Poppins', sans-serif;
+    border: 2px solid var(--link-color);
+    background-color: transparent;
+    padding: 10px;
+    margin-bottom: 15px;
+    outline: none;
+    resize: none;
+  }
+  
+  .ct-s .gp form button {
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    background-color: var(--link-color);
+    border: none;
+    height: 50px;
+    cursor: pointer;
+    transition: .1s;
+  }
+  
+  .ct-s .gp form button:hover {
+    filter: brightness(.9);
+  }
+
+  @media (max-width: 850px) {
+    .intro .text h2 {
+      font-size: 35px;
+    }
+  }
+  
+  @media (max-width: 740px) {
+    .intro {
+      flex-direction: column-reverse;
+    }
+  
+    .intro .image img {
+      width: 300px;
+    }
+
+    .ct-s .gp {
+      flex-direction: column;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    nav {
+      padding: 0 20px;
+    }
+  
+    nav .navBar a {
+      font-size: 22px;
+    }
+  
+    nav .navBar a:last-child {
+      color: var(--text-color);
+      background-color: transparent;
+      padding: 0;
+    }
+  
+    nav .navBar a span {
+      display: none;
+    }
+  
+    .intro {
+      padding: 0 20px;
+    }
+  
+    .intro .about-me {
+      font-size: 30px;
+    }
+  
+    .sk-section {
+      padding: 0 20px;
+    }
+  
+    .sk-section .mainCells .subCell span {
+      font-size: 16px;
+    }
+    
+    .ct-s {
+      padding: 0 20px;
+    }
+  }
