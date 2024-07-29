@@ -8,9 +8,8 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-      
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-      
+        <script defer src="script.js"></script>
         <link rel="stylesheet" href="styles.css">
         
         <title>My Portfolio</title> 
@@ -20,16 +19,16 @@
         <body>
             <nav>
               <div class="name">
-                <a href="/">Willem Harmse</a>
+                <a>Willem Harmse</a>
               </div>
           
               <div class="navBar">
-                <a href="http://github.com" target="_blank" rel="noopener noreferrer">
+                <a href="https://github.com/willemharmse" target="_blank" rel="noopener noreferrer">
                   <i class="fa-brands fa-github"></i>
                   <span>Github</span>
                 </a>
                 
-                <a href="http://linkedin.com" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.linkedin.com/in/willem-harmse-a988a7230/" target="_blank" rel="noopener noreferrer">
                   <i class="fa-brands fa-linkedin"></i>
                   <span>Linkedin</span>
                 </a>
@@ -38,7 +37,7 @@
 
             <main>
                 <section class="intro">
-                  <div class="about-me">
+                  <div id="top" class="about-me">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ipsam assumenda est perspiciatis labore quasi, iure dignissimos, libero, omnis sint necessitatibus ad. Hic expedita eligendi tenetur quisquam id quaerat alias cumque, autem voluptatem in iure ut laudantium tempora cupiditate voluptate est nemo impedit, quidem iusto, provident aperiam. Iste, repellat aperiam!</p>
             
                     <div class="navigation">
@@ -47,9 +46,19 @@
                         <span>Skills</span>
                       </a>
                       
+                      <a href="#cv">
+                        <i class="fa-solid fa-file"></i>
+                        <span>My CV</span>
+                      </a>
+
                       <a href="#contact">
                         <i class="fa-solid fa-envelope"></i>
                         <span>Contact</span>
+                      </a>
+
+                      <a href="files/cv.docx">
+                        <i class="fa-solid fa-download"></i>
+                        <span>Get My CV</span>
                       </a>
                     </div>
                   </div>
@@ -67,21 +76,57 @@
               
                     <div class="mainCells">
                       <div class="subCell">
-                        <img src="images/html-logo.webp" alt="html logo">
+                        <i class="fa-brands fa-html5 isize"></i>
                         <span>HTML</span>
+                        <div class="circle-container" data-percent="80">
+                          <div class="circle">
+                            <div class="circle-inner">
+                              <span class="circle-text">0%</span>
+                            </div>
+                          </div>
+                        </div>
                       </div>
                       
                       <div class="subCell">
-                        <img src="images/css-logo.webp" alt="css logo">
+                        <i class="fa-brands fa-css3-alt isize"></i>
                         <span>CSS</span>
                       </div>
                       
                       <div class="subCell">
-                        <img src="images/javascript-logo.webp" alt="javascript logo">
+                        <i class="fa-brands fa-js isize"></i>
                         <span>JavaScript</span>
                       </div>
                       
                       <div class="subCell">
+                        <i class="fa-brands fa-node-js isize"></i>
+                        <span>Node.js</span>
+                      </div>
+                    </div>
+                  </section>
+
+                  <section id="cv" class="cv-section">
+                    <h2>Curriculum Vitae</h2>
+                    <div class="CVTxt">
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates, perspiciatis iure distinctio quidem aperiam necessitatibus omnis possimus excepturi amet quos rerum? Perferendis repellat natus saepe quaerat quibusdam neque recusandae optio?
+                    </div>
+              
+                    <div class="cvCells">
+                      <div class="CSCell">
+                        <img src="images/html-logo.webp" alt="html logo">
+                        <span>HTML</span>
+                      </div>
+                      
+                      <div class="CSCell">
+                        <img src="images/css-logo.webp" alt="css logo">
+                        <span>CSS</span>
+                      </div>
+                      
+                      <div class="CSCell">
+                        <img src="images/javascript-logo.webp" alt="javascript logo">
+                        <span>JavaScript</span>
+                      </div>
+                      
+                      <div class="CSCell">
                         <img src="images/node-logo.webp" alt="node logo">
                         <span>Node.js</span>
                       </div>
