@@ -331,49 +331,44 @@
   }
   
   .ct-s h2 {
+    text-align: center;
     font-size: 35px;
   }
   
-  .ct-s .gp {
+  .ct-s .txtContact {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .ct-s .cCells {
     display: flex;
-    gap: 50px;
+    justify-content: center;
+    flex-wrap: wrap;
   }
   
-  .ct-s .gp .txtContact {
-    flex: 3;
-    margin-top: 20px;
-  }
-  
-  .ct-s .gp form {
-    flex: 3;
+  .ct-s .cCells .cCell {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  
+    width: 200px;
+    padding: 10px 20px;
+    margin: 10px;
+    border: 1.5px solid #d3d3d3;
+    border-radius: 5px;
   }
   
-  .ct-s .gp form input,
-  .ct-s .gp form textarea {
-    font-family: 'Poppins', sans-serif;
-    border: 2px solid var(--link-color);
-    background-color: transparent;
-    padding: 10px;
-    margin-bottom: 15px;
-    outline: none;
-    resize: none;
+  .ct-s .cCells .cCell img {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+    border-radius: 2px;
   }
   
-  .ct-s .gp form button {
-    font-size: 16px;
-    font-family: 'Poppins', sans-serif;
-    color: #fff;
-    background-color: var(--link-color);
-    border: none;
-    height: 50px;
-    cursor: pointer;
-    transition: .1s;
-  }
-  
-  .ct-s .gp form button:hover {
-    filter: brightness(.9);
+  .ct-s .cCells .cCell span {
+    font-size: 18px;
   }
 
   @media (max-width: 850px) {
@@ -437,6 +432,21 @@
   }
 
   .isize
+  {
+    font-size: 35px;
+  }
+
+  .isize2
+  {
+    font-size: 55px;
+  }
+
+  .fSize
+  {
+    font-size: 45px;
+  }
+
+  .fSize2
   {
     font-size: 35px;
   }
