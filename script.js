@@ -67,7 +67,7 @@
 
   function downloadCV() {
     const link = document.createElement('a');
-    link.href = 'files/CV.pdf';
+    link.href = 'files/cv.pdf';
     link.setAttribute('download', 'Willem_Harmse_CV.pdf');
     document.body.appendChild(link);
     link.click();
