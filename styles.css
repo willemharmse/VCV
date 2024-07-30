@@ -155,8 +155,6 @@
     font-size: 18px;
   }
 
-
-
   .cv-section {
     padding: 0 50px;
     margin-bottom: 100px;
@@ -172,14 +170,25 @@
     margin-bottom: 20px;
   }
   
+  .CSCell
+  {
+    font-weight: bold;
+  }
+
+  .cvSpan
+  {
+    justify-content: left !important;
+  }
+
   .cv-section .cvCells {
     display: flex;
-    justify-content: center;
+    justify-content: justify;
     flex-wrap: wrap;
   }
   
   .cv-section .cvCells .CSCell {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 10px;
@@ -198,6 +207,46 @@
     border-radius: 2px;
   }
   
+  .cv-section .cvCells .CSCell span {
+    font-size: 18px;
+  }
+
+  /*New*/
+  .cv-section .cvCells .CSCell {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    padding: 10px 20px;
+    margin: 10px;
+    border: 1.5px solid #d3d3d3;
+    border-radius: 5px;
+    cursor: pointer;
+    overflow: hidden;
+    transition: height 0.3s ease;
+  }
+
+  .cv-section .cvCells .CSCell .hidden-content {
+    display: none;
+    margin-top: 10px;
+    padding: 10px;
+    border-top: 1.5px solid #d3d3d3;
+    width: 100%;
+  }
+
+  .cv-section .cvCells .CSCell.active .hidden-content {
+    display: block;
+  }
+
+  .cv-section .cvCells .CSCell img {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+    border-radius: 2px;
+  }
+
   .cv-section .cvCells .CSCell span {
     font-size: 18px;
   }

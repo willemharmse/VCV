@@ -105,30 +105,41 @@
                   </section>
 
                   <section id="cv" class="cv-section">
-                    <h2>Curriculum Vitae</h2>
-                    <div class="CVTxt">
-                      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates, perspiciatis iure distinctio quidem aperiam necessitatibus omnis possimus excepturi amet quos rerum? Perferendis repellat natus saepe quaerat quibusdam neque recusandae optio?
-                    </div>
-              
-                    <div class="cvCells">
-                      <div class="CSCell">
-                        <img src="images/html-logo.webp" alt="html logo">
-                        <span>HTML</span>
-                      </div>
-                      
-                      <div class="CSCell">
-                        <img src="images/css-logo.webp" alt="css logo">
-                        <span>CSS</span>
-                      </div>
-                      
-                      <div class="CSCell">
-                        <img src="images/javascript-logo.webp" alt="javascript logo">
-                        <span>JavaScript</span>
-                      </div>
-                      
-                      <div class="CSCell">
-                        <img src="images/node-logo.webp" alt="node logo">
-                        <span>Node.js</span>
+                    <div>
+                      <h2>Curriculum Vitae</h2>
+                      <div class="CVTxt">Click on a section to see more details.</div>
+                      <div class="cvCells">
+                        <div class="CSCell" onclick="toggleContent(this)">
+                          <i class="fa-solid fa-user"></i>
+                          <span>Personal Information</span>
+                          <div class="hidden-content">
+                            <p>Details about Section 1...</p>
+                          </div>
+                        </div>
+
+                        <div class="CSCell" onclick="toggleContent(this)">
+                          <i class="fa-solid fa-school"></i>
+                          <span>Education</span>
+                          <div class="hidden-content">
+                            <p>Details about Section 2...</p>
+                          </div>
+                        </div>
+
+                        <div class="CSCell" onclick="toggleContent(this)">
+                          <i class="fa-solid fa-briefcase"></i>
+                          <span>Work Experience</span>
+                          <div class="hidden-content">
+                            <p>Details about Section 2...</p>
+                          </div>
+                        </div>
+
+                        <div class="CSCell" onclick="toggleContent(this)">
+                          <i class="fa-solid fa-handshake"></i>
+                          <span>Skills</span>
+                          <div class="hidden-content">
+                            <p>Details about Section 2...</p>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </section>
