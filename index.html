@@ -38,7 +38,9 @@
             <main>
                 <section class="intro">
                   <div id="top" class="about-me">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ipsam assumenda est perspiciatis labore quasi, iure dignissimos, libero, omnis sint necessitatibus ad. Hic expedita eligendi tenetur quisquam id quaerat alias cumque, autem voluptatem in iure ut laudantium tempora cupiditate voluptate est nemo impedit, quidem iusto, provident aperiam. Iste, repellat aperiam!</p>
+                    <p>Hi, I'm Willem Harmse, a passionate <span id="dynamic-text"></span>.</p>
+                    <p class="pad">With a good foundation in web development, programming, and system design, I offer a large set of skills. My journey in the tech world has been driven by curiosity and a desire to solve complex problems. Whether it's designing user interfaces, optimizing database performance, or creating new systems, I thrive on turning ideas into reality.</p>
+                    <p class="pad">Beyond my technical expertise, I am a lifelong learner who is always eager to embrace new challenges and technologies. When I'm not coding, I enjoy exploring the latest trends in tech and sharing knowledge with the community.</p>
             
                     <div class="navigation">
                       <a href="#skills">
@@ -49,6 +51,11 @@
                       <a href="#cv">
                         <i class="fa-solid fa-file"></i>
                         <span>My CV</span>
+                      </a>
+
+                      <a href="#projects">
+                        <i class="fa-solid fa-diagram-project"></i>
+                        <span>Projects</span>
                       </a>
 
                       <a href="#contact">
@@ -75,7 +82,8 @@
                     </div>
 
                     <h3 class="pad">Programming Languages</h3>
-                    <div class="mainCells">
+                    <p class="pad">In the last few years I spent my time mastering new programming languages. These langauges include, but are not limited to. These languages are those I feel I have mastered.</p>
+                    <div class="mainCells pad">
                       <div class="subCell">
                         <i class="fa-brands fa-java isize"></i>
                         <span>Java</span>
@@ -98,7 +106,8 @@
                     </div>
 
                     <h3 class="pad">Scripting Languages</h3>
-                    <div class="mainCells">
+                    <p class="pad">My introduction to scripting languages is still relatively new, but these are the langauges I feel I have mastered.</p>
+                    <div class="mainCells pad">
                       <div class="subCell">
                         <i class="fa-brands fa-html5 isize"></i>
                         <span>HTML</span>
@@ -185,6 +194,21 @@
                       </div>
                     </div>
                   </section>
+                  
+                  <section id="projects" class="proj-section">
+                    <div>
+                      <h2>Projects</h2>
+                      <div class="ProjTxt">The following are projects I have worked on. The icon is clickable and will redirect you to the repository.</div>
+                      <div class="pCells">
+                        <a href="https://github.com/willemharmse/CMPG223-Project-Final">
+                          <div class="pCell">
+                              <i class="fa-brands fa-github isize"></i>
+                            <span>CMPG223 System</span>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </section>
 
                   <section id="contact" class="ct-s">
                     <h2>Contact</h2>
@@ -209,5 +233,6 @@
                     </div>
                   </section>
             </main>
+          <button onclick="scrollToTop()" id="scrollToTopBtn" title="Go to top">Top</button>
     </body>
 </html>
