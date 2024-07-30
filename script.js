@@ -1,5 +1,5 @@
   document.addEventListener('DOMContentLoaded', (event) => {
-    const words = ["web developer", "programmer", "database designer", "systems designer"];
+    const words = ["Web Developer", "Programmer", "Database Designer", "Systems Designer"];
     let wordIndex = 0;
     let charIndex = 0;
     const typingSpeed = 150; 
@@ -50,6 +50,7 @@
   }
 
   let scrollToTopBtn = document.getElementById("scrollToTopBtn");
+  let getCVBtn = document.getElementById("getCVBtn");
 
   window.onscroll = function() {
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
@@ -62,4 +63,13 @@
   function scrollToTop() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
+  }
+
+  function downloadCV() {
+    const link = document.createElement('a');
+    link.href = 'files/CV.pdf';
+    link.setAttribute('download', 'Willem_Harmse_CV.pdf');
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
   }
