@@ -232,7 +232,7 @@
   .cv-section .cvCells .CSCell {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     gap: 10px;
     width: 100%;
@@ -514,4 +514,8 @@
   /* Style the Get CV button on hover */
   #getCVBtn:hover {
     background-color: var(--text-color); /* Add a dark-grey background on hover */
+  }
+
+  .hidden {
+    display: none;
   }
